@@ -73,7 +73,7 @@ for iteration in range(maximum_iterations):
     #always accept if the score is better
     #and allow a worse score to be accepted with a probability
     
-    if delta_wc > 0 or random.random() < random.random() < math.exp(-delta_wc/temperature):
+    if delta_wc > 0 or random.random() < random.random() < math.exp(delta_wc/temperature):
         current = neighbour
         current_wc = neighbor_wc
 
